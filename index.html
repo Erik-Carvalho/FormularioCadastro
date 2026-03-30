@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Formulário Cadastro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Um site de cadastro de usuário onde as informações vão percorrer o back-end e ficarem salvas no banco de dados.">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <header>
+            <h1>Formulário De Cadastro</h1>
+            <p>Envie suas informações para o banco de dados!</p>
+       </header>
+
+       <main>
+        <div class="container">
+            <form action="http://localhost:5500/api/usuarios" method="POST" id="formCadastro">
+                
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required placeholder="Crie uma senha segura">
+                </div>
+
+                <button type="submit">Finalizar Cadastro</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido por Erik Carvalho | Sistema de Gestão de Dados</p>
+    </footer>
+
+</body>
+</html>
